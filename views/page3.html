@@ -1,0 +1,18 @@
+<main>
+        <h4>Mustache Templating</h4>
+        <section style="padding: 1em; border: 2px solid #333333; border-radius: 5px;">
+                <p>My name is {{ name }} and I am {{ age }} years old.</p>
+                <p>I am interested in: </p>
+                <ul>
+                {{# interests }}
+                        <li>{{ . }}
+                {{/ interests }}
+                </ul>
+
+                {{> partial.html }}
+        </section>
+        <p>This data was rendered into the template via Mustache.</p>
+
+
+    	<a href="/page2/" hx-get="/page2/" hx-target="main">Go Back</a>
+</main>

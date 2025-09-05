@@ -1,0 +1,39 @@
+<head>
+    <title>HTMX Lesson</title>
+    <link rel="stylesheet" href="static/simple.css" />
+    <script src="static/htmx.min.js"></script>
+</head>
+<body hx-swap="outerHTML">
+	<main>
+    		<h1>Tic-Tac-Toe</h1>
+
+            {{> checkbox.html }}
+
+            <hr>
+
+            {{> board.html }}
+</body>
+
+<style>
+.board {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-rows: 50px;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: bold;
+        font-size: 2em;
+        border: 1px solid grey;
+    }
+
+    span:empty:hover {
+        background-color: lightblue;
+    }
+}
+</style>
+

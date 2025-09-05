@@ -1,0 +1,17 @@
+<main>
+	<h2>A whole other page!</h2>
+	<p>But none of the assets needed to reload.</p>
+
+	<h4>Forms</h4>
+	<p>Let's put it to the test. There is a form below that will
+	set the background color. Choose a color!</p>
+
+	<form action="/color" hx-post="/color" hx-swap="beforeend" hx-target="body">
+		<input type="text" name="color" />
+		<button>Send</button>
+	</form>
+
+	<a href="/" hx-get="/" hx-target="main">Go Back</a>
+        <span> </span>
+    	<a href="/page3/" hx-get="/page3/" hx-target="main">Templating</a>
+</main>

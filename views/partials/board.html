@@ -1,0 +1,13 @@
+<section class="board" hx-target="closest .board">
+    <span hx-post="mark" hx-vals='{"x":1,"y":1}'>{{ tl }}</span>
+    <span hx-post="mark" hx-vals='{"x":1,"y":2}'>{{ tm }}</span>
+    <span hx-post="mark" hx-vals='{"x":1,"y":3}'>{{ tr }}</span>
+    <span hx-post="mark" hx-vals='{"x":2,"y":1}'>{{ ml }}</span>
+    <span hx-post="mark" hx-vals='{"x":2,"y":2}'>{{ mm }}</span>
+    <span hx-post="mark" hx-vals='{"x":2,"y":3}'>{{ mr }}</span>
+    <span hx-post="mark" hx-vals='{"x":3,"y":1}'>{{ bl }}</span>
+    <span hx-post="mark" hx-vals='{"x":3,"y":2}'>{{ bm }}</span>
+    <span hx-post="mark" hx-vals='{"x":3,"y":3}'>{{ br }}</span>
+</section>
+<h2 id="next" hx-swap-oob="true">Next move: {{mark}}</h2>
+

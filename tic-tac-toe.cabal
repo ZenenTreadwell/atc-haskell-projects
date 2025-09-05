@@ -4,11 +4,17 @@ version:             0.1.0.0
 description:         A game of tic-tac-toe
 category:            CLI
 build-type:          Simple
-cabal-version:       >=1.10
+cabal-version:       >= 2.0
 
-executable tic-tac-toe
+executable cli
   main-is:             Main.hs
   hs-source-dirs:      src
   default-language:    Haskell2010
   build-depends:       base >=4.7 && <5
                      , ansi-terminal
+
+executable web
+  main-is:             Main.hs
+  hs-source-dirs:      app
+  default-language:    Haskell2010
+  build-depends:    base ^>=4.18.2.1, scotty, mustache, parsec, text, mtl, unliftio-core, stm, array, random
